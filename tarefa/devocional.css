@@ -1,0 +1,45 @@
+.cabecalho {
+    text-align: center;
+    font-size: 0.8em;
+    color: gray;
+}
+
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Anton", sans-serif;
+    font-weight: 1000;
+
+}
+
+.importante {
+    color: green;
+    text-align: center;
+    font-size: 1.4em;
+    font-size: bold;
+}
+
+.desafio {
+    font-style: italic;
+    background-color: gray;
+    text-align: center;
+}
+
+.texto {
+    font-size: 1.1em;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+}
+
+.versiculo {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.3em;
+}
