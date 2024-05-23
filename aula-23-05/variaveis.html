@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&family=Poetsen+One&display=swap');
+
+        :root {
+            --cor-fundo: rgb(253, 157, 253);
+            --cor-principal: white;
+            --font: 25px "Jacquard 12";
+            --fonte-destaque: 50px "Poetsen One", sans-serif;
+            --altura-cabecalho: 50px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font: var(--font)
+        }
+
+        .container {
+            background-color: var(--cor-fundo);
+            height: 100vh;
+        }
+
+        .cabecalho {
+            border: 1px solid var(--cor-principal);
+            height: var(--altura-cabecalho);
+            overflow: scroll;
+            color: var(--cor-principal);
+            padding: 10px;
+        }
+
+        .principal h1 {
+            padding: 10px;
+            font: var(--fonte-destaque);
+        }
+
+        .principal ul {
+            padding-left: 25px;
+        }
+
+        .principal {
+            border: 1px solid var(--cor-principal);
+            color: var(--cor-principal);
+            padding: 10px;
+            height: calc(100vh - var(--altura-cabecalho));
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="cabecalho">
+            <p>José Lindão</p>
+            <p>Rally Pobretinha</p>
+            <p>Mariana Foguenta</p>
+            <p>Macedo Baixinha</p>
+            <p>Manu Esquisita</p>
+            <p>Mais uma vez pra falar:</p>
+            <p>José Lindão</p>
+        </div>
+        <div class="principal">
+            <h1>Lista de Tarefas</h1>
+            <ul>
+                <li>Tarefa 1</li>
+                <li>Tarefa 2</li>
+                <li>Tarefa 3</li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+</html>
