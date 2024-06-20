@@ -30,8 +30,10 @@
       display: inline-block;
     }
     .box1 {
-      height: 50rem;
-      width: 50rem;
+      height: 30rem;
+      width: 60rem;
+      color: white;
+      align-self: center;
     }
 
     .flexbox{
@@ -42,9 +44,10 @@
       align-items: center;
       height: 100vh;
       width: 100vw;
-      background-color: black;
+      background-color: rgb(19, 2, 34);
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
+      align-items: center;
     }
     
     div#secao2 {
@@ -88,22 +91,37 @@
 
     .item1 {
       background-image: url(https://www.oreporter.net/wp-content/uploads/2023/11/lol-620x330.jpg);
+      background-color: rgb(19, 2, 34);
       background-position: center;
       background-repeat: no-repeat;
       justify-content: flex-end;
       width: 100vw;
       height: 100vh;
-      background-color: black;
+
 
             
     }
 
     .box {
-      
       align-items: center;
     }
 
-    
+    #titulo1 {
+      height: 45rem;
+      width: -30rem;
+      align-items: left;
+      text-align: center;
+      color: white;
+    }
+
+    .boxx1 {
+      height: 3rem;
+      width: 200rem;
+      color: white;
+  
+    }
+
+
 
 
   </style>
@@ -112,7 +130,7 @@
 <body>
   <div class="container">
 
-    <ul class="menu">
+    <ul class="menu" id="menu">
       <li><a href="#cabecalho">Introdução</a></li>
       <li><a href="#secao1">Jogo</a></li>
       <li><a href="#secao2">Riot</a></li>
@@ -122,11 +140,22 @@
     <div id="cabecalho">
       <h3 class="box flexbox">.</h3>
     </div>
-    
-    <div id="secao1">
 
-      <p class="box1"></p>
-      <h3>Jogo</h3>
+    
+    <div id="secao1"> 
+
+        <p class="box1"><b>League of Legends já existe há bastante tempo — desde 2009, para ser exato. Para alguém que quer começar a jogar pela primeira vez, um histórico desses pode intimidar. No entanto, entender um pouco sobre como o League of Legends funciona pode facilitar na hora de jogar. Ele é um jogo MOBA, ou seja, uma arena de batalha online multijogador, em que duas equipes competem pelo controle do mapa. O jogo combina trabalho em equipe, estratégia e habilidade em uma batalha ágil pela vitória.
+          Vencer uma partida de League of Legends consiste em destruir o Nexus inimigo. O vórtice espiralado que fica na base inimiga tem duas torres diretamente à sua frente, três inibidores que o protegem e três torres que protegem os inibidores. Resumindo: todas as rotas são caminhos que levam à base inimiga, onde uma torre e um inibidor aguardam ao final do percurso.
+
+          Para derrotar o Nexus, é necessário destruir pelo menos um inibidor. E, para destruir o inibidor do Nexus, os jogadores precisam destruir as torres que protegem cada um deles. Além disso, antes de chegar à base do adversário, há duas torres em cada rota que precisam ser derrubadas.
+          
+          Por mais que os abates não garantam vitórias diretamente, abater oponentes os atrapalha e, ao longo do tempo, os mantém mais fracos do que você. Isso não é garantia de nada, e mesmo inimigos fracos podem se mostrar mais espertos e acabar alcançando a vitória. No entanto, ter vantagem na quantidade de abates torna as coisas muito mais fáceis.
+        </b></p>
+
+        <h1 id="titulo1">Jogo</h1>
+
+        
+
       <div class="box item1"></div>
     </div>
     
@@ -135,7 +164,8 @@
     </div>
 
     <div id="secao3">
-      <h3>Seção 2</h3>
+      <h3>Seção 3</h3>
+      <a href="#menu">volta ao menu</a>
     </div>
   
   </div>
