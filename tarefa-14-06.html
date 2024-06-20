@@ -7,6 +7,9 @@
   <title>Document</title>
 
   <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
     * {
       padding: 0;
       margin: 0;
@@ -51,14 +54,17 @@
     }
     
     div#secao2 {
-      background-color: rgb(45, 45, 100);
+      background-color: black;
       width: 100%;
       height: 100vh;
+      justify-content: center;
+      gap: 10px;
+      display: flex;
 
     }
 
     div#secao3 {
-      background-color: rgb(45, 45, 100);
+      background-color: rgb(19, 2, 34);
       width: 100%;
       height: 100vh;
 
@@ -102,13 +108,43 @@
             
     }
 
-    .box {
-      align-items: center;
+    .boxe {
+      width: 30vw;
+      height: 100vh;
     }
 
+    .fase1 {
+      background-image: url(https://upload.wikimedia.org/wikipedia/pt/9/94/JinxLeagueOfLegends.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+      order: 1;
+      flex-shrink: 1;
+
+    }
+
+    .fase2 {
+      background-image: url(https://upload.wikimedia.org/wikipedia/pt/6/66/VioletLeagueOfLegends.jpg);
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+      order: 2;
+      flex-shrink: 2;
+    }
+
+    .fase3 {
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ21MCIVTzveLiLQFlHM_DYfaQCD9wT-pF7_w&s);
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+      order: 3;
+      flex-shrink: 3;
+
+    }
+
+
     #titulo1 {
-      height: 45rem;
-      width: -30rem;
+      height: 40rem;
       align-items: left;
       text-align: center;
       color: white;
@@ -119,6 +155,29 @@
       width: 200rem;
       color: white;
   
+    }
+
+    .titi {
+      font-family: "Anton", sans-serif;
+      color: white;
+    }
+
+    .voltar {
+      background-color: black;
+    }
+
+    .magem {
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUfMcdNpgjxvhB4_VWA6CdaIYmUcPhxceyA&sg);
+      background-color: rgb(19, 2, 34);
+      background-position: center;
+      background-repeat: no-repeat;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #textinho {
+      color: white;
     }
 
 
@@ -133,8 +192,8 @@
     <ul class="menu" id="menu">
       <li><a href="#cabecalho">Introdução</a></li>
       <li><a href="#secao1">Jogo</a></li>
-      <li><a href="#secao2">Riot</a></li>
-      <li><a href="#secao3">Personagens</a></li>
+      <li><a href="#secao2">Personagens</a></li>
+      <li><a href="#secao3">Riot</a></li>
     </ul>
 
     <div id="cabecalho">
@@ -150,23 +209,39 @@
           Para derrotar o Nexus, é necessário destruir pelo menos um inibidor. E, para destruir o inibidor do Nexus, os jogadores precisam destruir as torres que protegem cada um deles. Além disso, antes de chegar à base do adversário, há duas torres em cada rota que precisam ser derrubadas.
           
           Por mais que os abates não garantam vitórias diretamente, abater oponentes os atrapalha e, ao longo do tempo, os mantém mais fracos do que você. Isso não é garantia de nada, e mesmo inimigos fracos podem se mostrar mais espertos e acabar alcançando a vitória. No entanto, ter vantagem na quantidade de abates torna as coisas muito mais fáceis.
+          
         </b></p>
 
         <h1 id="titulo1">Jogo</h1>
 
-        
 
       <div class="box item1"></div>
     </div>
-    
+    <div class="voltar"><a href="#menu">menu</a></div>
+
     <div id="secao2">
-      <h3>Seção 2</h3>
+
+      <div class="boxe fase1"></div>
+      <div class="boxe fase2"></div>
+      <div class="boxe fase3"></div>
     </div>
+    <div class="voltar"><a href="#menu">menu</a></div>
+
+
 
     <div id="secao3">
-      <h3>Seção 3</h3>
-      <a href="#menu">volta ao menu</a>
+      <h1 class="titi">Riot Games</h1>
+      <p id="textinho"><b>A Riot Games, Inc. é uma desenvolvedora, editora e organizadora de torneios de esportes eletrônicos americana com sede em West Los Angeles, Califórnia. Foi fundada em setembro de 2006 por Brandon Beck e Marc Merrill para desenvolver League of Legends e passou a desenvolver vários jogos de histórias derivadas (spin-off) e o jogo de tiro em primeira pessoa não relacionado ao seu jogo principal, Valorant. Em 2011, a Riot Games foi adquirida pelo conglomerado empresarial chinês Tencent. A Riot Games não faz seus títulos spin-offs, trabalho este executado pelo seu braço editorial, chamado de Riot Forge, que supervisiona a produção de spin-offs de League of Legends por outros desenvolvedores. A empresa trabalhou com o estúdio de animação francês Fortiche para produzir e lançar Arcane, uma série de televisão baseada no universo de League of Legends
+        A Riot Games opera e organiza 14 ligas regionais de esports de League of Legends, o Campeonato Mundial de League of Legends e o Valorant Champions Tour.
+
+      A empresa, que tinha 24 escritórios em todo o mundo em 2018, vende patrocínios corporativos, produtos e direitos de streaming para suas ligas.
+
+      A Riot já enfrentou denúncias e processos alegando uma cultura tóxica no local de trabalho, incluindo discriminação de gênero e assédio sexual. A empresa foi criticada pelo uso de cláusula arbitral em resposta a essas alegações.
+      </b></p>
+
+      <div class="magem"></div>
     </div>
+    <div class="voltar"><a href="#menu">menu</a></div>
   
   </div>
 
