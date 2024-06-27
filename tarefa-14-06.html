@@ -7,6 +7,9 @@
   <title>Document</title>
 
   <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
     * {
       padding: 0;
       margin: 0;
@@ -21,19 +24,19 @@
     }
 
     div#cabecalho {
-      background-image: url(https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg);
+      background-image: url(https://img.odcdn.com.br/wp-content/uploads/2024/04/imagem_2024-04-30_172325065.png);
       width: 100vw;
       height: 100vh;
-      color: white;
-      font-size: 30px;
-      display: flex;
-      align-items: baseline;
-      align-items: flex-start;
-      flex-wrap: wrap;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline-block;
     }
-    .box{
-      height: 50rem;
-      width: 50rem;
+    .box1 {
+      height: 30rem;
+      width: 60rem;
+      color: white;
+      align-self: center;
     }
 
     .flexbox{
@@ -41,53 +44,162 @@
     }
    
     div#secao1 {
-      background-color: rgb(88, 88, 138);
-      width: 100vw;
+      align-items: center;
       height: 100vh;
+      width: 100vw;
+      background-color: rgb(19, 2, 34);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     
     div#secao2 {
-      background-color: rgb(45, 45, 100);
+      background-color: black;
+      width: 100%;
+      height: 100vh;
+      justify-content: center;
+      gap: 10px;
+      display: flex;
+
+    }
+
+    div#secao3 {
+      background-color: rgb(19, 2, 34);
       width: 100%;
       height: 100vh;
 
     }
 
-
-
     ul.menu li {
       display: inline-block;
-      list-style: none;
     }
 
     /*  */
     ul.menu a {
-      width: 120px;
-      background-color: black;
-      color: rgb(236, 236, 176);      
-      padding: 10px;
+      display: inline-block;
+      width: 90px;
+      color: rgb(247, 247, 246);      
+      padding: 10px 90px;
       transition: 0.3s;
       border: 1px solid black;
       text-decoration: none;
-      
-      display: inline-block;
     }
     ul.menu a:hover {
       background-color: rgb(226, 226, 226);
       color: black;
-      border: 1px solid black;
+      border: 1px solid;
+      background-size: cover;
     }
 
     ul.menu {
         background-color: black;
     }
 
-    #menun {
-      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbeVxPGroU4KwHpgWt626wh2DEAmo9xOLypg&s);
+    .item1 {
+      background-image: url(https://www.oreporter.net/wp-content/uploads/2023/11/lol-620x330.jpg);
+      background-color: rgb(19, 2, 34);
+      background-position: center;
+      background-repeat: no-repeat;
+      justify-content: flex-end;
+      width: 100vw;
+      height: 100vh;
+
+
+            
+    }
+
+
+    .box {
+      transition: none;
+      align-items: center;
+    }
+    .boxe {
+      width: 30vw;
+      height: 100vh;
+
+    }
+
+    .fase1 {
+      background-image: url(https://upload.wikimedia.org/wikipedia/pt/9/94/JinxLeagueOfLegends.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+      order: 1;
+      flex-shrink: 1;
+
+    }
+
+    .fase2 {
+      background-image: url(https://upload.wikimedia.org/wikipedia/pt/6/66/VioletLeagueOfLegends.jpg);
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+      order: 2;
+      flex-shrink: 2;
+    }
+
+    .fase3 {
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ21MCIVTzveLiLQFlHM_DYfaQCD9wT-pF7_w&s);
+      background-size: cover;
+      background-position: center;
+      background-attachment: scroll;
+      order: 3;
+      flex-shrink: 3;
+
+    }
+
+
+    #titulo1 {
+      height: 40rem;
+      align-items: left;
+      text-align: center;
+      color: white;
+    }
+
+    .boxx1 {
+      height: 3rem;
+      width: 200rem;
+      color: white;
   
     }
 
-    
+    .titi {
+      font-family: "Anton", sans-serif;
+      color: white;
+    }
+
+    .voltar {
+      background-color: black;
+    }
+
+    .magem {
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkUfMcdNpgjxvhB4_VWA6CdaIYmUcPhxceyA&sg);
+      background-color: rgb(19, 2, 34);
+      background-position: center;
+      background-repeat: no-repeat;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+      height: 15rem;
+
+    }
+
+    #textinho {
+      color: white;
+    }
+
+    #contatos {
+      background-color: black;
+      color: white;
+      line-height: 150%;
+    }
+
+    .end {
+      text-indent: 0.5rem;
+      font-size: 0.8rem;
+    }
+
+
 
 
   </style>
@@ -96,24 +208,76 @@
 <body>
   <div class="container">
 
-    <ul class="menu" id="menun">
-      <li><a href="#cabecalho">Jogo</a></li>
-      <li><a href="#secao1">História</a></li>
-      <li><a href="#secao2">Personagem</a></li>
+    <ul class="menu" id="menu">
+      <li><a href="#cabecalho">Introdução</a></li>
+      <li><a href="#secao1">Jogo</a></li>
+      <li><a href="#secao2">Personagens</a></li>
+      <li><a href="#secao3">Riot</a></li>
     </ul>
 
     <div id="cabecalho">
-      <h3 class="box flexbox">Jinx</h3>
+      <h3 class="box flexbox">.</h3>
     </div>
+
     
-    <div id="secao1">
-      <h3>Jogo</h3>
-      <li>League of Legends é um jogo eletrônico do gênero multiplayer online battle arena (MOBA) no qual o jogador, de uma perspectiva isométrica, controla um personagem (denominado "campeão") com um conjunto de habilidades únicas.</li>
+    <div id="secao1"> 
+
+        <p class="box1"><b>League of Legends já existe há bastante tempo — desde 2009, para ser exato. Para alguém que quer começar a jogar pela primeira vez, um histórico desses pode intimidar. No entanto, entender um pouco sobre como o League of Legends funciona pode facilitar na hora de jogar. Ele é um jogo MOBA, ou seja, uma arena de batalha online multijogador, em que duas equipes competem pelo controle do mapa. O jogo combina trabalho em equipe, estratégia e habilidade em uma batalha ágil pela vitória.
+          Vencer uma partida de League of Legends consiste em destruir o Nexus inimigo. O vórtice espiralado que fica na base inimiga tem duas torres diretamente à sua frente, três inibidores que o protegem e três torres que protegem os inibidores. Resumindo: todas as rotas são caminhos que levam à base inimiga, onde uma torre e um inibidor aguardam ao final do percurso.
+
+          Para derrotar o Nexus, é necessário destruir pelo menos um inibidor. E, para destruir o inibidor do Nexus, os jogadores precisam destruir as torres que protegem cada um deles. Além disso, antes de chegar à base do adversário, há duas torres em cada rota que precisam ser derrubadas.
+          
+          Por mais que os abates não garantam vitórias diretamente, abater oponentes os atrapalha e, ao longo do tempo, os mantém mais fracos do que você. Isso não é garantia de nada, e mesmo inimigos fracos podem se mostrar mais espertos e acabar alcançando a vitória. No entanto, ter vantagem na quantidade de abates torna as coisas muito mais fáceis.
+          
+        </b></p>
+
+        <h1 id="titulo1">Jogo</h1>
+
+
+      <div class="box item1"></div>
     </div>
-    
+    <div class="voltar"><a href="#menu">menu</a></div>
+
     <div id="secao2">
-      <h3>Seção 2</h3>
+
+      <div class="boxe fase1"></div>
+      <div class="boxe fase2"></div>
+      <div class="boxe fase3"></div>
     </div>
+    <div class="voltar"><a href="#menu">menu</a></div>
+
+
+
+    <div id="secao3">
+      <h1 class="titi">Riot Games</h1>
+      <p id="textinho"><b>A Riot Games, Inc. é uma desenvolvedora, editora e organizadora de torneios de esportes eletrônicos americana com sede em West Los Angeles, Califórnia. Foi fundada em setembro de 2006 por Brandon Beck e Marc Merrill para desenvolver League of Legends e passou a desenvolver vários jogos de histórias derivadas (spin-off) e o jogo de tiro em primeira pessoa não relacionado ao seu jogo principal, Valorant. Em 2011, a Riot Games foi adquirida pelo conglomerado empresarial chinês Tencent. A Riot Games não faz seus títulos spin-offs, trabalho este executado pelo seu braço editorial, chamado de Riot Forge, que supervisiona a produção de spin-offs de League of Legends por outros desenvolvedores. A empresa trabalhou com o estúdio de animação francês Fortiche para produzir e lançar Arcane, uma série de televisão baseada no universo de League of Legends
+        A Riot Games opera e organiza 14 ligas regionais de esports de League of Legends, o Campeonato Mundial de League of Legends e o Valorant Champions Tour.
+
+      A empresa, que tinha 24 escritórios em todo o mundo em 2018, vende patrocínios corporativos, produtos e direitos de streaming para suas ligas.
+
+      A Riot já enfrentou denúncias e processos alegando uma cultura tóxica no local de trabalho, incluindo discriminação de gênero e assédio sexual. A empresa foi criticada pelo uso de cláusula arbitral em resposta a essas alegações.
+      </b></p>
+      <br>
+      <p id="textinho"><b>Os fundadores da Riot Games, Brandon "Ryze" Beck e Marc "Tryndamere" Merrill, tornaram-se amigos enquanto colegas de quarto na Universidade do Sul da Califórnia, onde os dois estudaram negócios.[3] Beck e Merrill acreditavam que muitos desenvolvedores de videogames desviavam seu foco para lançar jogos diferentes com muita frequência, distinguindo Defense of the Ancients como um exemplo de que os jogos poderiam ser monetizados a longo prazo.[3][4] Eles também se inspiraram em designers de videogames asiáticos que lançavam seus jogos sem custo inicial (free-to-play) e, em vez disso, cobravam por vantagens adicionais, conhecidas como microtransações, que são a forma principal de monetizar seus jogos.[5]
+
+        Em 2008, a Riot Games obteve um financiamento inicial de EUA US $ 7 milhões fornecidos por empresas de capital de risco Benchmark Capital e Firstmark Capital.[6] Em uma segunda rodada de financiamentos em 2009, a empresa obteve US$8 milhões Benchmark, Firstmark e tecnologia da gigante chinesa Tencent.[7][8] No início de 2011, a Tencent Holdings comprou uma participação majoritária na Riot Games. Embora os detalhes deste acordo nunca tenham sido divulgados, a Bloomberg Businessweek e a VentureBeat estimam que a transação seja cerca de US$ 350 a US$ 400 milhões.
+        Os funcionários da empresa incluem veteranos de Defense of the Ancients (DotA), como o desenvolvedor de DotA Steve "Guinsoo" Feak e o fundador do fansite DotA-Allstars.com Steve "Pendragon" Mescon, Supremo.[11] A Riot Games também emprega ex-funcionários da Blizzard Entertainment.[12] Em 12 de julho de 2013, o Business Insider classificou a Riot Games em #4 na lista das 25 melhores empresas de tecnologia para se trabalhar em 2013.[13]
+
+        Marc "Tryndamere" Merrill, presidente da Riot, respondeu à perguntas da comunidade de League of Legends no Reddit em 3 de maio de 2012.[14]
+        
+        Em 2015, foi anunciado que a Tencent oficializou a compra da parte que faltava da empresa, tornando-se dona em sua totalidade da empresa.</b></p>
+
+      <div class="magem"></div>
+    </div>
+
+    <div id="contatos">
+      <p class="end">Endereço: Avenida Thomas Edison, 849 - Barra Funda, Sao Paulo - SP, 01.140-001</p>
+      <p class="end">CEP: 01.140-001</p>
+      <p class="end">Gmail: support@riotgames.com</p>
+      <div class="voltar"><a href="#menu">menu</a></div>
+
+    </div>
+    
   
   </div>
 
