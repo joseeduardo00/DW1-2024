@@ -6,6 +6,12 @@
     <title>Document</title>
     <style>
 
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: 0;
+        }
+
         table {
             border-collapse: collapse;
         }
@@ -21,8 +27,21 @@
         }
 
         .imagem_cafe {
+            height: 3px;
+            width: 3px;
+            background-position: left;
             background-image: url(https://cdn-icons-png.flaticon.com/512/2652/2652631.png);
+            background-attachment: scroll;
+            background-size: cover;
         }
+
+        .imagem_almoco_e_janta {
+            background-position: left;
+            background-image: url(https://cdn-icons-png.flaticon.com/512/2217/2217350.png);
+            background-attachment: scroll;
+            background-size: cover;
+        }
+
 
     </style>
 </head>
@@ -43,22 +62,42 @@
             <td class="imagem_cafe">Café</td>
             <td></td>
             <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tbody>
 
         <tfoot>
-            <td>Jantar</td>
+            <td class="imagem_almoco_e_janta">Jantar</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
         </tfoot>
 
         <tr>
-            <td>Almoço</td>
+            <td class="imagem_almoco_e_janta">Almoço</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
         </tr>
 
         <tr>
-            <td>Café</td>
+            <td class="imagem_cafe">Café</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
         </tr>
