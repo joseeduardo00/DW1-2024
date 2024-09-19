@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./multas.css">
+    <script src="multas.js" defer></script>
+</head>
+<body>
+
+    <h1>Sistemas de Multas</h1>
+
+    <div class="container">
+
+        <label for="maxima"> Velocidade máxima de via</label>
+        <input type="text" id="maxima">
+
+        <label for="veiculo">Velocidade do veículo</label>
+        <input id="veiculo" type="text">
+
+        <button id="calcular" onclick="multas()">Calcular</button>
+
+    </div>
+    <div class="info"></div>
+    <div id="saida"></div>
+    
+</body>
+</html>
