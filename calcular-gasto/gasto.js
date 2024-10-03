@@ -1,26 +1,26 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    let inputDistancia = document.getElementById("distancia");
-    let inputAutonomia = document.getElementById("autonomia");
-    let inputPedagio = document.getElementById("pedagio");
-    let inputPrecoAlcool = document.getElementById("precoalcool")
-    let divResultado = document.getElementById("saida");
-    let botaoCalcular = document.getElementById("calcular");
+function calcularMulta() {
+    const velocidadeMaxima = parseFloat(document.getElementById('velocidadeMaxima').value);
+    const velocidadeVeiculo = parseFloat(document.getElementById('velocidadeVeiculo').value);
+    const resultadoDiv = document.getElementById('resultado');
+    const excesso = ((velocidadeVeiculo - velocidadeMaxima) / velocidadeMaxima) * 100;
 
-    // Atribuição da função ao evento de clique do botão
-    botaoCalcular.onclick = calcularCusto;
-
-    function calcularCusto() {
-        // Entrada
-        let distancia = Number(inputDistancia.value);
-        let autonomia = Number(inputAutonomia.value);
-        let pedagio = Number(inputPedagio.value);
-        let precoAlcool = Number(inputPrecoAlcool.value);
-
-        // Processamento
-        let custoCombustivel = (distancia / autonomia) * precoAlcool;
-        let custoTotal = custoCombustivel + pedagio;
-
-        // Saída
-        divResultado.innerText = 'O custo total da viagem é R$ ' + custoTotal.toFixed(2);
+   
+    if (excesso <= 0) {
+        resultadoDiv.innerHTML = "Você está dentro do limite de velocidade.";
+        resultadoDiv.className = 'result';
+    } else {
+        if (excesso > 0 && excesso <= 20) {
+            resultadoDiv.innerHTML = "Você excedeu até 20% a velocidade máxima. Sua multa é de R$ 130,16.";
+            resultadoDiv.className = 'result alert';
+        } else {
+            if (excesso > 20 && excesso <= 50) {
+                resultadoDiv.innerHTML = "Você excedeu entre 20% e 50% a velocidade máxima. Sua multa é de R$ 195,23.;
+                resultadoDiv.className = 'result alert';
+            } else {
+                resultadoDiv.innerHTML = "Você excedeu mais de 50% a velocidade máxima. Sua multa é de R$ 880,41.";
+                resultadoDiv.className = 'result alert';
+            }
+        }
     }
-});
+    
+}
